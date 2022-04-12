@@ -1,4 +1,4 @@
-# [team name] Design Document
+#  Team RunTime Exception Design Document
 
 ## Instructions
 
@@ -17,7 +17,7 @@ level of detail to aim for.*
 
 ## 1. Problem Statement
 
-*Explain clearly what problem you are trying to solve.*
+*User wants to get meme that foresee their day, save it and share*
 
 
 ## 2. Top Questions to Resolve in Review
@@ -25,9 +25,8 @@ level of detail to aim for.*
 *List the most important questions you have about your design, or things that
 you are still debating internally that you might like help working through.*
 
-1.   
-2.   
-3.  
+1.   Whether to use meme Api or internal links.
+2.    Is it possible to use Cognito with DynamoDB
 
 ## 3. Use Cases
 
@@ -37,10 +36,15 @@ for the organization providing the product to customers.*
 
 U1. *As a [product] customer, I want to `<result>` when I `<action>`*
 
+U1. As a user, I want to get my foreseen meme when I press the ‘see my meme horoscope today’’.
+
 U2. *As a [product] customer, I want to view my grocery list when I log into the
 grocery list page*
-    
-U3. ...
+
+U2. As a user, I want to be able to save the generated meme into my list of saved memes.
+
+U3. As a user, I want to be able to send the generated meme to others via multiple platforms.
+
 
 ## 4. Project Scope
 
@@ -105,10 +109,34 @@ the first endpoint)*
 
 # 7. Tables
 
-*Define the DynamoDB tables you will need for the data your service will use. It
-may be helpful to first think of what objects your service will need, then
-translate that to a table structure, like with the *`Playlist` POJO* versus the
-`playlists` table in the Unit 3 project.*
+
+
+###User Table
+email (partition_key) : String
+
+Password : String
+
+
+
+
+
+
+###Meme Table
+memeName (sort_key) : String
+
+imageLink (partition_key) : String
+
+
+###Meme Liked List Table
+email (partition_key) : String
+
+imageLinkList : List
+
+
+
+
+
+
 
 # 8. Pages
 
@@ -119,3 +147,5 @@ pages. It should be clear what the interactions will be on the page, especially
 where customers enter and submit data. You may want to accompany the mockups
 with some description of behaviors of the page (e.g. “When customer submits the
 submit-dog-photo button, the customer is sent to the doggie detail page”)*
+
+###[Website sketch](Frontend-sketch.html)

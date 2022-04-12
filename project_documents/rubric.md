@@ -20,9 +20,9 @@ We want you to see the full set of expectations for transparency’s sake.*
 |Deliverable                                                      |Due Date                  |Date Completed |URL                               |
 |---                                                              |---                       |---            |---                               |
 |Team name                                                        |Sprint 1 Module 1         |               |name:                             |
-|[Design Document - problem statement](design_document.md)        |Sprint 1 Module 2         |               |                                  |
+|[Design Document - problem statement](../design_document.md)        |Sprint 1 Module 2         |               |                                  |
 |[Team Charter](team_charter.md)                                  |Sprint 1 Modeul 3         |               |                                  |
-|[Design Document](design_document.md)                            |Sprint 1 Friday by 5pm    |               |                                  |
+|[Design Document](../design_document.md)                            |Sprint 1 Friday by 5pm    |               |                                  |
 |Project Completion (Feature Complete)                            |Sprint 3 Friday by 5pm    |               |                                  |
 |[Team Reflection](reflection.md)                                 |Sprint 4 Wednesday by 5PM |               |                                  |
 |[Accomplishment Tracking (person 1)](accomplishment_tracking.md) |Sprint 4 Wednesday by 5PM |               |                                  |
