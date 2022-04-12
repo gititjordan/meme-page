@@ -19,7 +19,7 @@ We want you to see the full set of expectations for transparency’s sake.*
 
 |Deliverable                                                      |Due Date                  |Date Completed |URL                               |
 |---                                                              |---                       |---            |---                               |
-|Team name                                                        |Sprint 1 Module 1         |               |name:                             |
+|Team name                                                        |Sprint 1 Module 1         |               |name:  Team Runtime Execption                           |
 |[Design Document - problem statement](../design_document.md)        |Sprint 1 Module 2         |               |                                  |
 |[Team Charter](team_charter.md)                                  |Sprint 1 Modeul 3         |               |                                  |
 |[Design Document](../design_document.md)                            |Sprint 1 Friday by 5pm    |               |                                  |
