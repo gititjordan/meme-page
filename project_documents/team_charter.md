@@ -45,13 +45,15 @@ These resources may be helpful as you fill out your team charter. They are optio
 
 * **How can we take risks on this team without feeling insecure or
   embarrassed?**
-   Ensure that everyone among our team feels confident and comfortable that
+   
+Ensure that everyone among our team feels confident and comfortable that
    their ideas will be respected and considered. It is important for all 
    members of the team to have a mutual respect for one another to ensure
    that no individual feels out of place or awkward.
 
 * **How do we address situations where any team member feels unsafe?**
-    It is imperative that all team members create an environment where
+    
+It is imperative that all team members create an environment where
     a member of the team can state when they feel unheard or unsafe. 
     However, if there came a time that a member feels unsafe and is unable 
     to share with the group it may be necessary to seek help from an outside 
@@ -60,31 +62,36 @@ These resources may be helpful as you fill out your team charter. They are optio
 ### Dependability, Structure, Clarity
 
 * **How can we count on each other to do high quality work on time?**
-     Utilize trello to break down projects into smaller tasks, have team
+
+Utilize trello to break down projects into smaller tasks, have team
     members take tasks they feel comfortable with. If you see someone struggling 
     or spending alot of time on a task offer a helping hand, sometimes all we 
     need is an extra set of eyes.
 
 * **How do we address missed deadlines?**
-     Every missed deadline needs to be a lesson for the future, as a team 
+
+Every missed deadline needs to be a lesson for the future, as a team 
     we must analyze the situation and figure out what caused the deadline to
     be missed rather than blindly assigning blame.
 
 * **How can we make goals, roles, and execution plans on our team clear?**
-     All goals will be tracked via trello and upon completion should be peer reviewed by
+
+All goals will be tracked via trello and upon completion should be peer reviewed by
     at least one other team member. Prior to this review the code should have tests written
     and be pushed to the unreviewed branch.
 
 ### Goals
 
 * **Overall: What is our overall objective for the Learn & Be Curious unit?**
-    Show the knowledge that we have learned at bloomtech, and branch out to 
+    
+Show the knowledge that we have learned at bloomtech, and branch out to 
     that we can not only prove what we learned, but prove we can go above and beyond
     our knowledge.
 
 
 * **Performance: What do we want to prioritize in terms of what we achieve?**
-    Our goal in this project is to show our abilities to function as a team and
+    
+Our goal in this project is to show our abilities to function as a team and
     create something efficiently as a group.
 
 
@@ -94,8 +101,9 @@ These resources may be helpful as you fill out your team charter. They are optio
 
 
 * **Task processes: What processes will our team follow to meet our goals,
-  complete tasks, or to build team relationships?**
-  We have decided to have mandatory meetings take place at some point between
+complete tasks, or to build team relationships?**
+  
+We have decided to have mandatory meetings take place at some point between
   9-12 pst, only the first 15 minutes will be mandatory during which pressing 
   matters will be discussed. After which individual problems will be presented
   and discussed. 
