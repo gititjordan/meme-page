@@ -2,16 +2,6 @@
 
 ## Instructions
 
-*Save a copy of this template for your team in the same folder that contains
-this template.*
-
-*Replace italicized text (including this text!) with details of the design you
-are proposing for your team project. (Your replacement text shouldn't be in
-italics)*
-
-*You should take a look at the example design document in the same folder as
-this template for more guidance on the types of information to capture, and the
-level of detail to aim for.*
 
 ## Horrible Meme Horoscope Design
 
@@ -34,12 +24,10 @@ you are still debating internally that you might like help working through.*
 would like to do (and why). You may also include use cases for yourselves, or
 for the organization providing the product to customers.*
 
-U1. *As a [product] customer, I want to `<result>` when I `<action>`*
 
-U1. As a user, I want to get my foreseen meme when I press the ‘see my meme horoscope today’’.
+U1. As a user, I want to be able to get a meme I choose.
 
-U2. *As a [product] customer, I want to view my grocery list when I log into the
-grocery list page*
+U2. As a user, I want to be able to get a random meme.
 
 U2. As a user, I want to be able to save the generated meme into my list of saved memes.
 
@@ -72,24 +60,17 @@ design?*
 
 # 5. Proposed Architecture Overview
 
-*Describe broadly how you are proposing to solve for the requirements you
-described in Section 2.*
+We have decided to build out our own API because if we were to use a builtout API we would not have much work to do
 
-*This may include class diagram(s) showing what components you are planning to
-build.*
+###[Api Design](project_documents/HorribleMemeHoroscope.html)
 
-*You should argue why this architecture (organization of components) is
-reasonable. That is, why it represents a good data flow and a good separation of
-concerns. Where applicable, argue why this architecture satisfies the stated
-requirements.*
+We are building a social media platform and in order to do so we have to at bare minimum: get an image to our frontend, 
+have a list of saved images that can be retrieved from, and update that saved list
 
 # 6. API
 
 ## 6.1. Public Models
 
-*Define the data models your service will expose in its responses via your
-*`-Model`* package. These will be equivalent to the *`PlaylistModel`* and
-*`SongModel`* from the Unit 3 project.*
 
 `UserModel` - Contains Cognito Id and list of preferences
 
@@ -97,23 +78,19 @@ requirements.*
 
 ## 6.2. *First Endpoint*
 
-*Describe the behavior of the first endpoint you will build into your service
-API. This should include what data it requires, what data it returns, and how it
-will handle any known failure cases. You should also include a sequence diagram
-showing how a user interaction goes from user to website to service to database,
-and back. This first endpoint can serve as a template for subsequent endpoints.
-(If there is a significant difference on a subsequent endpoint, review that with
-your team before building it!)*
+### Grab a meme
+there are two get methods here one with a memes name and the other with no meme name, the former takes a path parameter 
+to grab an image url by its name the latter just grabs a random meme. 
 
-*(You should have a separate section for each of the endpoints you are expecting
-to build...)*
+
 
 ## 6.3 *Second Endpoint*
 
-*(repeat, but you can use shorthand here, indicating what is different, likely
-primarily the data in/out and error conditions. If the sequence diagram is
-nearly identical, you can say in a few words how it is the same/different from
-the first endpoint)*
+###Get a list of saved memes
+grabs the list of saved memes associated with the user
+
+###Update a list of saved memes
+updates the list associated with the user takes an email and an url to add or remove from the list
 
 # 7. Tables
 
