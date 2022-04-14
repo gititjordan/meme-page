@@ -1,4 +1,4 @@
-# [team name] Team Charter
+# Runtime Exception Team Charter
 
 ## Instructions
 
@@ -38,7 +38,7 @@ These resources may be helpful as you fill out your team charter. They are optio
 |Andrew Trujillo | Slack, Discord                               |
 |Mickey Huang    | Discord, SMS                                 |
 |Casey Carpenelli| Slack, Discord                               |
-|Jordan Thornton | Slack, Discord                                              |
+|Jordan Thornton | Slack, Discord                               |
 |Giang Pham      |                                              |
 
 ### Psychological safety
@@ -115,7 +115,7 @@ We have decided to have mandatory meetings take place at some point between
 becoming an software engineer?**
 
 * *Mickey Huang*: It is important that I learn the necessary skills to become a capable software engineer.
-* *Team member name*:
+* *Andrew Trujillo*: fine tone my backend skills and learn to work in a software environment
 * *Team member name*:
 * *Team member name*:
 
@@ -124,7 +124,7 @@ project management skills, develop public speaking skills, speak up more, speak
 up less, etc.**
 
 * *Mickey Huang*: I want to achieve overall software development skills and team skills.
-* *Team member name*:
+* *Andrew Trujillo*: How to work effectively in a team environment 
 * *Team member name*:
 * *Team member name*:
 
@@ -135,12 +135,13 @@ roles will be permanent and some may be temporary. Some roles may be assigned to
 one or two people, and others may be rotated. Feel free to create additional
 rotating or permanent roles as you go.*
 
-|**Role**               |**Responsibilities** |**Primary person** |**Secondary person** |
-|---                    |---                  |---                |---                  |
-|Liaison to Instructors | Main contact to instructor to give status updates, including team dynamics, project progress, etc |||
-|Rotating Role 1        |                     |                   |                     |
-|Rotating Role 2        |                     |                   |                     |
-|Rotating Role 3        |                     |                   |                     |
+|**Role**               |**Responsibilities**         |**Primary person** |**Secondary person** |
+|---                    |---                          |---                |---                  |
+|Liaison to Instructors | Know what is going on with the team, organize and relay info to instructor | Andrew            | Casey               |
+|Backend                | Backend java design         | Jordan            | Mickey              |
+|Frontend               | design and build frontend   | Giang             | Andrew              |
+|Api design             |Coordinate backend and frontend and ensure that they are synced| Casey             | Mickey
+
 
 ## Acknowledgement
 
@@ -148,5 +149,5 @@ rotating or permanent roles as you go.*
 
 * Team member (a) Name & Date: Mickey Huang 04/13/22
 * Team member (b) Name & Date: Jordan Thornton 04/14/22
-* Team member (c) Name & Date:
+* Team member (c) Name & Date: Andrew Trujillo 04/14/22
 * Team member (d) Name & Date:
