@@ -34,59 +34,65 @@ These resources may be helpful as you fill out your team charter. They are optio
 ### Administrative Information:
 
 |Name            |Preferred Contact Method (Zoom, Slack, email, etc.) |
-|---	           |---                                           |
-|Team Member (a) |                                              |
-|Team Member (b) |                                              |
-|Team Member (c) |                                              |
-|Team Member (d) |                                              |
+|---	         |---                                           |
+|Andrew Trujillo | Slack, Discord                               |
+|Mickey Huang    | Discord, SMS                                 |
+|Casey Carpenelli| Slack, Discord                               |
+|Jordan Thornton |                                              |
+|Giang Pham      |                                              |
 
 ### Psychological safety
 
 * **How can we take risks on this team without feeling insecure or
   embarrassed?**
-    *E.g., Be open to opinions that differ from your own, actively ask for
-    opinions from each member of the team, do not interrupt each other, don’t
-    place blame, all suggestions or questions are encouraged, listened to,
-    considered equally, and never judged*
+   
+Ensure that everyone among our team feels confident and comfortable that
+   their ideas will be respected and considered. It is important for all 
+   members of the team to have a mutual respect for one another to ensure
+   that no individual feels out of place or awkward.
 
 * **How do we address situations where any team member feels unsafe?**
-    *E.g., communicate when there is a misunderstanding, don’t move forward
-    until the situation is resolved, directly address and resolve negativity,
-    give and receive feedback with a positive, strength-building mindset, if
-    necessary, escalate to a BloomTech staff member*  
+    
+It is imperative that all team members create an environment where
+    a member of the team can state when they feel unheard or unsafe. 
+    However, if there came a time that a member feels unsafe and is unable 
+    to share with the group it may be necessary to seek help from an outside 
+    source such as a Bloomtech Admin.
 
 ### Dependability, Structure, Clarity
 
 * **How can we count on each other to do high quality work on time?**
-     *E.g., estimate task size, break down large tasks, call out tasks at risk
-     early, ask each other for help, how to ensure timely code reviews, how to
-     share knowledge, help each other hold accountability give frequent,
-     scheduled updates*  
+
+Utilize trello to break down projects into smaller tasks, have team
+    members take tasks they feel comfortable with. If you see someone struggling 
+    or spending alot of time on a task offer a helping hand, sometimes all we 
+    need is an extra set of eyes.
 
 * **How do we address missed deadlines?**
-     *E.g., acknowledge, but don’t punish slipped dates, figure out what went
-     wrong, identify lessons for future*
+
+Every missed deadline needs to be a lesson for the future, as a team 
+    we must analyze the situation and figure out what caused the deadline to
+    be missed rather than blindly assigning blame.
 
 * **How can we make goals, roles, and execution plans on our team clear?**
-     *E.g., where to track goals and when to review them, use definitive,
-     quantifiable terminology, include clear background on why this goal is
-     necessary, include “done” criteria for the goal (code is pushed with
-     integration tests, document is reviewed, etc.)*
 
+All goals will be tracked via trello and upon completion should be peer reviewed by
+    at least one other team member. Prior to this review the code should have tests written
+    and be pushed to the unreviewed branch.
 
 ### Goals
 
 * **Overall: What is our overall objective for the Learn & Be Curious unit?**
-    *E.g., “Apply what we’ve learned throughout BloomTech in a team project to prepare
-    ourselves for internships and full-time SDE roles.”*
+    
+Show the knowledge that we have learned at bloomtech, and branch out to 
+    that we can not only prove what we learned, but prove we can go above and beyond
+    our knowledge.
 
 
 * **Performance: What do we want to prioritize in terms of what we achieve?**
-    *What will be true when you have 'succeeded' on this project? E.g. enjoy
-    ourselves, maintain our energy to the end, ensure all team members
-    participate, create professional connections, exceed instructor
-    expectations, efficiently pace the project so we’re not rushing at the end,
-    etc.*
+    
+Our goal in this project is to show our abilities to function as a team and
+    create something efficiently as a group.
 
 
 * **Learning: What are the things that our team wants to learn?**
@@ -95,10 +101,12 @@ These resources may be helpful as you fill out your team charter. They are optio
 
 
 * **Task processes: What processes will our team follow to meet our goals,
-  complete tasks, or to build team relationships?**
-    *E.g., leadership, meeting procedures/length of meetings, expectations for
-    meeting attendance and timeliness, other types of meetings (happy hours,
-    lunch and learns)*
+complete tasks, or to build team relationships?**
+  
+We have decided to have mandatory meetings take place at some point between
+  9-12 pst, only the first 15 minutes will be mandatory during which pressing 
+  matters will be discussed. After which individual problems will be presented
+  and discussed. 
 
 
 ## Meaning & Impact
@@ -106,7 +114,7 @@ These resources may be helpful as you fill out your team charter. They are optio
 **What is personally important for each team member about joining BloomTech? About
 becoming an software engineer?**
 
-* *Team member name*:
+* *Mickey Huang*: It is important that I learn the necessary skills to become a capable software engineer.
 * *Team member name*:
 * *Team member name*:
 * *Team member name*:
@@ -115,7 +123,7 @@ becoming an software engineer?**
 project management skills, develop public speaking skills, speak up more, speak
 up less, etc.**
 
-* *Team member name*:
+* *Mickey Huang*: I want to achieve overall software development skills and team skills.
 * *Team member name*:
 * *Team member name*:
 * *Team member name*:
@@ -138,7 +146,7 @@ rotating or permanent roles as you go.*
 
 **I agree to the terms and conditions of these team agreements:**
 
-* Team member (a) Name & Date:
+* Team member (a) Name & Date: Mickey Huang 04/13/22
 * Team member (b) Name & Date:
 * Team member (c) Name & Date:
 * Team member (d) Name & Date:

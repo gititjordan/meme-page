@@ -13,7 +13,7 @@ italics)*
 this template for more guidance on the types of information to capture, and the
 level of detail to aim for.*
 
-## *Project Title* Design
+## Horrible Meme Horoscope Design
 
 ## 1. Problem Statement
 
@@ -58,13 +58,17 @@ your design.*
 *Which parts of the problem defined in Sections 1 and 2 will you solve with this
 design?*
 
+* Retrieve a picture from a database and display
+* Only display pictures related to the User's interests
+* The ability to save pictures to the users account
+* send pictures to other users
+
 ### 4.2. Out of Scope
 
-*Based on your problem description in Sections 1 and 2, are there any aspects
-you are not planning to solve? Do potential expansions or related problems occur
-to you that you want to explicitly say you are not worrying about now? Feel free
-to put anything here that you think your team can't accomplish in the unit, but
-would love to do with more time.*
+* Users will not be able to add their own picture
+* Users will not be able to comment on pictures
+* Users do not have the ability to send comments with pictures
+* Users do not have the ability to create their own tags
 
 # 5. Proposed Architecture Overview
 
@@ -86,6 +90,10 @@ requirements.*
 *Define the data models your service will expose in its responses via your
 *`-Model`* package. These will be equivalent to the *`PlaylistModel`* and
 *`SongModel`* from the Unit 3 project.*
+
+`UserModel` - Contains Cognito Id and list of preferences
+
+`MemeModel` - Contains memeName, possibly unique Asin, Url
 
 ## 6.2. *First Endpoint*
 
