@@ -37,7 +37,7 @@ These resources may be helpful as you fill out your team charter. They are optio
 |---	         |---                                           |
 |Andrew Trujillo | Slack, Discord                               |
 |Mickey Huang    | Discord, SMS                                 |
-|Casey           |                                              |
+|Casey Carpenelli| Slack, Discord                               |
 |Jordan Thornton |                                              |
 |Giang Pham      |                                              |
 
