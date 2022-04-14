@@ -38,7 +38,7 @@ These resources may be helpful as you fill out your team charter. They are optio
 |Andrew Trujillo | Slack, Discord                               |
 |Mickey Huang    | Discord, SMS                                 |
 |Casey Carpenelli| Slack, Discord                               |
-|Jordan Thornton |                                              |
+|Jordan Thornton | Slack, Discord                                              |
 |Giang Pham      |                                              |
 
 ### Psychological safety
@@ -147,6 +147,6 @@ rotating or permanent roles as you go.*
 **I agree to the terms and conditions of these team agreements:**
 
 * Team member (a) Name & Date: Mickey Huang 04/13/22
-* Team member (b) Name & Date:
+* Team member (b) Name & Date: Jordan Thornton 04/14/22
 * Team member (c) Name & Date:
 * Team member (d) Name & Date:
