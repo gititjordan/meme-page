@@ -36,7 +36,7 @@ These resources may be helpful as you fill out your team charter. They are optio
 |Name            |Preferred Contact Method (Zoom, Slack, email, etc.) |
 |---	         |---                                           |
 |Andrew Trujillo | Slack, Discord                               |
-|Mickey Huang    |                                              |
+|Mickey Huang    | Discord, SMS                                 |
 |Casey           |                                              |
 |Jordan Thornton |                                              |
 |Giang Pham      |                                              |
@@ -114,7 +114,7 @@ We have decided to have mandatory meetings take place at some point between
 **What is personally important for each team member about joining BloomTech? About
 becoming an software engineer?**
 
-* *Team member name*:
+* *Mickey Huang*: It is important that I learn the necessary skills to become a capable software engineer.
 * *Team member name*:
 * *Team member name*:
 * *Team member name*:
@@ -123,7 +123,7 @@ becoming an software engineer?**
 project management skills, develop public speaking skills, speak up more, speak
 up less, etc.**
 
-* *Team member name*:
+* *Mickey Huang*: I want to achieve overall software development skills and team skills.
 * *Team member name*:
 * *Team member name*:
 * *Team member name*:
@@ -146,7 +146,7 @@ rotating or permanent roles as you go.*
 
 **I agree to the terms and conditions of these team agreements:**
 
-* Team member (a) Name & Date:
+* Team member (a) Name & Date: Mickey Huang 04/13/22
 * Team member (b) Name & Date:
 * Team member (c) Name & Date:
 * Team member (d) Name & Date:
