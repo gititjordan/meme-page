@@ -7,7 +7,9 @@
 
 ## 1. Problem Statement
 
-*User wants to get meme that foresee their day, save it and share*
+*Users around the world have fallen in love with social media platforms such as Twitter, Instagram, Facebook, etc. Our 
+goal is to first create a website comparable to these, then add our own twist to it by adding in horoscopes. First off we need to 
+create a website that users can use to enjoy, share, and save memes.*
 
 
 ## 2. Top Questions to Resolve in Review
@@ -15,8 +17,9 @@
 *List the most important questions you have about your design, or things that
 you are still debating internally that you might like help working through.*
 
-1.   Whether to use meme Api or internal links.
-2.    Is it possible to use Cognito with DynamoDB
+1. Whether to use meme Api or internal links.
+2. Is it possible to use Cognito with DynamoDB
+3. How do we implement the idea of a horoscope
 
 ## 3. Use Cases
 
@@ -29,9 +32,9 @@ U1. As a user, I want to be able to get a meme I choose.
 
 U2. As a user, I want to be able to get a random meme.
 
-U2. As a user, I want to be able to save the generated meme into my list of saved memes.
+U3. As a user, I want to be able to save the generated meme into my list of saved memes.
 
-U3. As a user, I want to be able to send the generated meme to others via multiple platforms.
+U4. As a user, I want to be able to send the generated meme to others via multiple platforms.
 
 
 ## 4. Project Scope
@@ -60,12 +63,16 @@ design?*
 
 # 5. Proposed Architecture Overview
 
-We have decided to build out our own API because if we were to use a builtout API we would not have much work to do
+We have decided to build out our own API because if we were to use a built out API we would not have much work to do, as 
+for dynamoDB with cognito we know that it is possible from surface level research.
+Regarding the horoscope we could add a **See your daily meme** button on the main page, that finds a meme based on their
+horoscope
 
 ###[Api Design](project_documents/HorribleMemeHoroscope.html)
 
 We are building a social media platform and in order to do so we have to at bare minimum: get an image to our frontend, 
-have a list of saved images that can be retrieved from, and update that saved list
+have a list of saved images that can be retrieved from, and update that saved list. As the project is being built we hope
+to discover new features to add such as horoscope memes.
 
 # 6. API
 
@@ -134,3 +141,4 @@ with some description of behaviors of the page (e.g. “When customer submits th
 submit-dog-photo button, the customer is sent to the doggie detail page”)*
 
 ###[Website sketch](Frontend-sketch.html)
+###[Api Design](project_documents/HorribleMemeHoroscope.html)
