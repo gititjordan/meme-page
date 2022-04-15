@@ -118,6 +118,7 @@ becoming an software engineer?**
 * *Andrew Trujillo*: fine tone my backend skills and learn to work in a software environment
 * *Team member name*:
 * *Team member name*:
+* *Team member name*:
 
 **What each team member wants to achieve: e.g. improve analytical skills, learn
 project management skills, develop public speaking skills, speak up more, speak
@@ -125,6 +126,7 @@ up less, etc.**
 
 * *Mickey Huang*: I want to achieve overall software development skills and team skills.
 * *Andrew Trujillo*: How to work effectively in a team environment 
+* *Team member name*:
 * *Team member name*:
 * *Team member name*:
 
@@ -150,4 +152,5 @@ rotating or permanent roles as you go.*
 * Team member (a) Name & Date: Mickey Huang 04/13/22
 * Team member (b) Name & Date: Jordan Thornton 04/14/22
 * Team member (c) Name & Date: Andrew Trujillo 04/14/22
+* Team member (d) Name & Date: Casey Carpenelli 04/15/22
 * Team member (d) Name & Date:
