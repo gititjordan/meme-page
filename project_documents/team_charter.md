@@ -39,7 +39,7 @@ These resources may be helpful as you fill out your team charter. They are optio
 |Mickey Huang    | Discord, SMS                                 |
 |Casey Carpenelli| Slack, Discord                               |
 |Jordan Thornton | Slack, Discord                               |
-|Giang Pham      |                                              |
+|Giang Pham      | Slack, Discord                                               |
 
 ### Psychological safety
 
@@ -116,7 +116,7 @@ becoming an software engineer?**
 
 * *Mickey Huang*: It is important that I learn the necessary skills to become a capable software engineer.
 * *Andrew Trujillo*: fine tone my backend skills and learn to work in a software environment
-* *Team member name*:
+* *Team member name*: It is important that I keep myself continually motivated to learn.
 * *Team member name*:
 * *Team member name*:
 
@@ -126,7 +126,7 @@ up less, etc.**
 
 * *Mickey Huang*: I want to achieve overall software development skills and team skills.
 * *Andrew Trujillo*: How to work effectively in a team environment 
-* *Team member name*:
+* *Team member name*: I want to learn to speak up more and improve my analytical skills
 * *Team member name*:
 * *Team member name*:
 
@@ -153,4 +153,4 @@ rotating or permanent roles as you go.*
 * Team member (b) Name & Date: Jordan Thornton 04/14/22
 * Team member (c) Name & Date: Andrew Trujillo 04/14/22
 * Team member (d) Name & Date: Casey Carpenelli 04/15/22
-* Team member (d) Name & Date:
+* Team member (d) Name & Date: Giang Pham 4/17/2022 
