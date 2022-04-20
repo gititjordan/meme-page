@@ -22,6 +22,6 @@ public static long longValueOfHoroscope;
         jsonParser jsonParser = new jsonParser();
         ArrayList urls = jsonParser.parse();
         MemeDao memeDao = new MemeDao();
-
+        memeDao.saveMemeList(urls);
     }
 }

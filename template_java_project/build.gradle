@@ -4,6 +4,7 @@ plugins {
 
 repositories {
     mavenCentral()
+
 }
 
 tasks.withType(Checkstyle) {
@@ -39,6 +40,8 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
 
     implementation 'com.google.guava:guava:30.1.1-jre'
+
+    implementation 'org.apache.logging.log4j:log4j:2.13.2'
 
     testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.10.0'
 

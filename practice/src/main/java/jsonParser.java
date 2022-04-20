@@ -18,15 +18,16 @@ public class jsonParser {
         el = obj.parse(reader);
     }
 
-    public ArrayList<String> parse() {
-        ArrayList<String> urls = new ArrayList<>();
+    public ArrayList<Meme> parse() {
+        ArrayList<Meme> memes = new ArrayList<>();
         JsonArray results = el.getAsJsonObject().getAsJsonArray("images_results");
         System.out.println(results);
         for(int i = 0; i < results.size(); i++) {
            JsonElement curr = (JsonElement) results.get(i);
-           JsonElement url = curr.getAsJsonObject().get("link");
-           urls.add(url.getAsString());
+           Meme meme = new Meme();
+           meme.setUrl(curr.getAsJsonObject().get("original").getAsString());
+           memes.add(meme);
         }
-        return urls;
+        return memes;
     }
 }

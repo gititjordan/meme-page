@@ -18,12 +18,11 @@ public class MemeDao {
         dynamoDBMapper = new DynamoDBMapper(dynamoDBClient);
     }
 
-    public void saveMemeList(ArrayList<String> urls) {
-        for (String url:urls) {
-            Meme meme = new Meme();
-            meme.setUrl(url);
+    public ArrayList<Meme> saveMemeList(ArrayList<Meme> memes) {
+        for (Meme meme:memes) {
             dynamoDBMapper.save(meme);
         }
+        return memes;
     }
 
 }
