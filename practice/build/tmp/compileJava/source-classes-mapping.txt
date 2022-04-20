@@ -1,0 +1,8 @@
+main/java/Meme.java
+ main.java.Meme
+main/java/jsonParser.java
+ main.java.jsonParser
+main/java/main.java
+ main.java.main
+main/java/DynamoDbShit.java
+ main.java.DynamoDbShit
