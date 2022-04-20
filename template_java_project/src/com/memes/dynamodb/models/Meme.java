@@ -1,9 +1,7 @@
-package main.java;
+package com.memes.dynamodb.models;
 
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBRangeKey;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
+import com.amazonaws.services.dynamodbv2.datamodeling.*;
+
 @DynamoDBTable(tableName = "Memes")
 public class Meme {
     private String url;
@@ -18,7 +16,7 @@ public class Meme {
         this.url = url;
     }
 
-    @DynamoDBAttribute(attributeName = "index")
+    @DynamoDBIndexHashKey(globalSecondaryIndexName = "index-index", attributeName = "index")
     public Integer getIndex() {
         return index;
     }

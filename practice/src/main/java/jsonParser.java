@@ -25,6 +25,7 @@ public class jsonParser {
         for(int i = 0; i < results.size(); i++) {
            JsonElement curr = (JsonElement) results.get(i);
            Meme meme = new Meme();
+           meme.setIndex(i);
            meme.setUrl(curr.getAsJsonObject().get("original").getAsString());
            memes.add(meme);
         }
