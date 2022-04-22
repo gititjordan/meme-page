@@ -9,6 +9,6 @@ import javax.inject.Singleton;
 @Component(modules = {DaoModule.class})
 public interface ServiceComponent {
     GetIndexMemeActivity provideGetIndexMemeActivity();
-    GetRandomMemeActivity provideGetRandomMemeActivity();
+//    GetRandomMemeActivity provideGetRandomMemeActivity();
 
 }

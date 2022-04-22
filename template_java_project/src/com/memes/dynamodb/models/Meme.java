@@ -6,7 +6,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.*;
 public class Meme {
     private String url;
     private String name;
-    private Integer index;
+    private Integer numInDb;
     @DynamoDBHashKey(attributeName = "Url")
     public String getUrl() {
         return url;
@@ -16,13 +16,13 @@ public class Meme {
         this.url = url;
     }
 
-    @DynamoDBIndexHashKey(globalSecondaryIndexName = "index-index", attributeName = "index")
-    public Integer getIndex() {
-        return index;
+    @DynamoDBIndexHashKey(globalSecondaryIndexName = "index-index", attributeName = "numInDB")
+    public Integer getNumInDb() {
+        return numInDb;
     }
 
-    public void setIndex(Integer index) {
-        this.index = index;
+    public void setNumInDb(Integer numInDb) {
+        this.numInDb = numInDb;
     }
 
     @DynamoDBAttribute(attributeName = "Name")

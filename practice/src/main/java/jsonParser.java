@@ -7,7 +7,6 @@ import com.google.gson.JsonParser;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class jsonParser {
@@ -25,7 +24,7 @@ public class jsonParser {
         for(int i = 0; i < results.size(); i++) {
            JsonElement curr = (JsonElement) results.get(i);
            Meme meme = new Meme();
-           meme.setIndex(i);
+           meme.setNumInDb(i);
            meme.setUrl(curr.getAsJsonObject().get("original").getAsString());
            memes.add(meme);
         }
