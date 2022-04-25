@@ -6,29 +6,26 @@ import com.memes.converter.ModelConverter;
 import com.memes.dynamodb.MemeDao;
 import com.memes.dynamodb.models.Meme;
 import com.memes.models.MemeModel;
-import com.memes.models.requests.GetRandomMemeRequest;
+import com.memes.models.requests.GetIndexMemeRequest;
+import com.memes.models.requests.GetUrlMemeRequest;
 import com.memes.models.results.GetIndexMemeResult;
+import com.memes.models.results.GetUrlMemeResult;
 
 import javax.inject.Inject;
-import java.util.Random;
 
-public class GetRandomMemeActivity implements RequestHandler<GetRandomMemeRequest, GetIndexMemeResult> {
-    public static final String SIZE_URL = "AmountInDb";
-    Random r;
+public class GetUrlMemeActivity implements RequestHandler<GetUrlMemeRequest, GetUrlMemeResult> {
     private MemeDao memeDao;
     @Inject
-    public GetRandomMemeActivity(MemeDao memeDao) {
+    public GetUrlMemeActivity(MemeDao memeDao) {
         this.memeDao = memeDao;
-        r = new Random();
-
     }
 
     @Override
-    public GetIndexMemeResult handleRequest(final GetRandomMemeRequest input, Context context) {
-        Meme amount = memeDao.getMemeByUrl(SIZE_URL);
-        Meme meme = memeDao.getMemeByNumInDb(r.nextInt(amount.getNumInDb()));
+    public GetUrlMemeResult handleRequest(final GetUrlMemeRequest input, Context context) {
+        String url = input.getUrl();
+        Meme meme = memeDao.getMemeByUrl(url);
         MemeModel memeModel = new ModelConverter().toMemeModel(meme);
-        return GetIndexMemeResult.builder()
+        return GetUrlMemeResult.builder()
                 .withMeme(memeModel)
                 .build();
     }

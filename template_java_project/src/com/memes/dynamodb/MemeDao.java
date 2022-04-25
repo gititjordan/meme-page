@@ -31,4 +31,9 @@ public class MemeDao {
         PaginatedQueryList<Meme> memeList = dynamoDBMapper.query(Meme.class, queryExpression);
         return memeList.get(0);
     }
+
+    public Meme getMemeByUrl(String url) {
+        Meme meme = dynamoDBMapper.load(Meme.class, url);
+        return meme;
+    }
 }
