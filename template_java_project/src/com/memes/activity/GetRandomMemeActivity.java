@@ -8,11 +8,12 @@ import com.memes.dynamodb.models.Meme;
 import com.memes.models.MemeModel;
 import com.memes.models.requests.GetRandomMemeRequest;
 import com.memes.models.results.GetIndexMemeResult;
+import com.memes.models.results.GetRandomMemeResult;
 
 import javax.inject.Inject;
 import java.util.Random;
 
-public class GetRandomMemeActivity implements RequestHandler<GetRandomMemeRequest, GetIndexMemeResult> {
+public class GetRandomMemeActivity implements RequestHandler<GetRandomMemeRequest, GetRandomMemeResult> {
     public static final String SIZE_URL = "AmountInDb";
     Random r;
     private MemeDao memeDao;
@@ -24,11 +25,11 @@ public class GetRandomMemeActivity implements RequestHandler<GetRandomMemeReques
     }
 
     @Override
-    public GetIndexMemeResult handleRequest(final GetRandomMemeRequest input, Context context) {
+    public GetRandomMemeResult handleRequest(final GetRandomMemeRequest input, Context context) {
         Meme amount = memeDao.getMemeByUrl(SIZE_URL);
-        Meme meme = memeDao.getMemeByNumInDb(r.nextInt(amount.getNumInDb()));
+        Meme meme = memeDao.getMemeByNumInDb(r.nextInt(amount.getNumInDb() * -1));
         MemeModel memeModel = new ModelConverter().toMemeModel(meme);
-        return GetIndexMemeResult.builder()
+        return GetRandomMemeResult.builder()
                 .withMeme(memeModel)
                 .build();
     }

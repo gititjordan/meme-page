@@ -17,4 +17,9 @@ public class UserDao {
         return user;
     }
 
+    public User getUser(String email) {
+        User user = dynamoDBMapper.load(User.class, email);
+        return user;
+    }
+
 }

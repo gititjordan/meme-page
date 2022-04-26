@@ -1,8 +1,5 @@
 package com.memes.dependency;
-import com.memes.activity.GetIndexMemeActivity;
-import com.memes.activity.GetRandomMemeActivity;
-import com.memes.activity.GetUrlMemeActivity;
-import com.memes.activity.UserPoolMapperActivity;
+import com.memes.activity.*;
 import dagger.Component;
 
 import javax.inject.Singleton;
@@ -12,7 +9,8 @@ import javax.inject.Singleton;
 public interface ServiceComponent {
     GetIndexMemeActivity provideGetIndexMemeActivity();
     GetUrlMemeActivity provideGetUrlMemeActivity();
-//    GetRandomMemeActivity provideGetRandomMemeActivity();
+    GetRandomMemeActivity provideGetRandomMemeActivity();
     UserPoolMapperActivity provideUserPoolMapperActivity();
+    GetEmailUserActivity provideGetEmailUserActivity();
 
 }
