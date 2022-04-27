@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+<body onload="random()">
+    <script src="js/home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Navigation -->
+    <nav class="w3-bar w3-black">
+        <a href="#home" class="w3-button w3-bar-item">Saved Memes</a>
+        <a href="#contact" class="w3-button w3-bar-item">My Account</a>
+    </nav>
+    
+    
+      
+    <section class="center">
+      <img class="centerimage" id="image1" onerror="handleError()">
+    <section>
+        <button onclick="previous()" class="left">previous</button>
+        <button onclick="next()" class="right">next</button>
+        <button onclick="random()" class="centerbutton">Random</button>
+        <button class="topbutton">share?</button>
+    </section>
+    </section>
+    <style>
+        .center {
+            display: block;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 250px;
+            width: 50%;
+        }
+        .centerimage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .left {
+            margin-top: 20px;
+            position: absolute;
+            right: 60%;
+            width: 5%;
+            height: 3.5%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: .2s;
+        }
+        .right {
+            margin-top: 20px; 
+            position: absolute;
+            right: 40%;
+            width: 5%;
+            height: 3.5%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: .2s;
+        }
+        .centerbutton {
+            display: block;
+            margin-top: 80px;
+            position: absolute;
+            right: 50%;
+            width: 5%;
+            height: 3.5%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: .2s;
+        }
+        .topbutton {
+            display: block;
+            margin-top: 20px;
+            position: absolute;
+            right: 50%;
+            width: 5%;
+            height: 3.5%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: .2s;
+        }
+        .topbutton:hover {
+            background-color: #a5a8a5;  
+            color: white;
+        }
+        .centerbutton:hover {
+            background-color: #a5a8a5; 
+            color: white;
+        }
+        .left:hover {
+            background-color: #a5a8a5; 
+            color: white;
+        }
+        .right:hover {
+            background-color: #a5a8a5;  
+            color: white;
+        }
+        </style>
+
+</body>
+</html>
