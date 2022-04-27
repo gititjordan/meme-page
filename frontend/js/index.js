@@ -7,7 +7,12 @@ function previous() {
 
 async function get() {
     let url = "https://g4yv4i4tg4.execute-api.us-west-2.amazonaws.com/prod/memetable";
-    axios.get(url).then((res) => {
-    console.log(res);
+    let headers = {
+        authorization: {
+          'x-api-key': 'FyWu0VPqWuanyt47uz7fD3SmmCBZLRHC6Xg08JLg'
+        }
+      }
+    axios.get(url, headers).then((res) => {
+        document.getElementById("image1").src=res.data.memeModel.url
     });
 }
