@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
-<body>
+<body onload="random()">
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Navigation -->
@@ -16,12 +16,12 @@
     
     
       
-    <section class="center" >
-      <img class="centerimage" id="image1" src=https://78.media.tumblr.com/6cb2fb151ce5a86d993b833a4a23eede/tumblr_pfxm7gYvqZ1soeggh_540.png>
+    <section class="center">
+      <img class="centerimage" id="image1" onerror="handleError()">
     <section>
         <button onclick="previous()" class="left">previous</button>
         <button onclick="next()" class="right">next</button>
-        <button onclick="get()" class="centerbutton">Random</button>
+        <button onclick="random()" class="centerbutton">Random</button>
         <button class="topbutton">share?</button>
     </section>
     </section>

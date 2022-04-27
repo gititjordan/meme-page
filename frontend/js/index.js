@@ -1,18 +1,53 @@
+let currIndex = 0;
+let url = "https://g4yv4i4tg4.execute-api.us-west-2.amazonaws.com/prod/memetable";
+let headers = {
+    authorization: {
+      'x-api-key': 'FyWu0VPqWuanyt47uz7fD3SmmCBZLRHC6Xg08JLg'
+    }
+  }
+let direction = 0; 
 function next() {
-    document.getElementById("image1").src="https://i.kym-cdn.com/photos/images/original/002/278/129/e0b.jpg";
+    let urlExt = url.concat("/").concat((currIndex+1).toString())
+    let success = false;
+    if (currIndex >= 98) {
+        currIndex = 0
+    }
+    axios.get(urlExt, headers).then((res) => {
+                document.getElementById("image1").src=res.data.memeModel.url
+                success = true
+                console.log(res)
+            });
+    
+    currIndex++
+    direction = 1;
 }
 function previous() {
-    document.getElementById("image1").src="https://78.media.tumblr.com/6cb2fb151ce5a86d993b833a4a23eede/tumblr_pfxm7gYvqZ1soeggh_540.png";
+    let urlExt = url.concat("/").concat((currIndex-1).toString())
+    if (currIndex <= 0) {
+        currIndex = 97
+    }
+    axios.get(urlExt, headers).then((res) => {
+        document.getElementById("image1").src=res.data.memeModel.url
+        currIndex-=1;
+    });
+    direction = -1;
 }
 
-async function get() {
-    let url = "https://g4yv4i4tg4.execute-api.us-west-2.amazonaws.com/prod/memetable";
-    let headers = {
-        authorization: {
-          'x-api-key': 'FyWu0VPqWuanyt47uz7fD3SmmCBZLRHC6Xg08JLg'
-        }
-      }
+function random() {
     axios.get(url, headers).then((res) => {
         document.getElementById("image1").src=res.data.memeModel.url
+        currIndex = res.data.memeModel.numInDb
+        console.log(res)
     });
+    direction = 0;
+}
+
+function handleError() {
+   if (direction < 0) {
+       previous()
+   } else if (direction > 0) {
+       next()
+   } else {
+       random()
+   }
 }
