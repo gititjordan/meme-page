@@ -8,7 +8,6 @@ import com.memes.models.requests.GetIndexMemeRequest;
 import com.memes.models.results.GetIndexMemeResult;
 
 public class GetIndexMemeProvider implements RequestHandler<GetIndexMemeRequest, GetIndexMemeResult> {
-
     @Override
     public GetIndexMemeResult handleRequest(final GetIndexMemeRequest input, Context context) {
         ServiceComponent dagger = getDaggerServiceComponent();

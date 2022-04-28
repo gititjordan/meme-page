@@ -2,9 +2,12 @@ package com.memes.models;
 
 import com.memes.dynamodb.models.User;
 
+import java.util.List;
+
 public class UserModel {
     private String userName;
     private String email;
+    private List<String> memeLikedList;
 
     public UserModel(){
 
@@ -12,6 +15,7 @@ public class UserModel {
     public UserModel(UserModel.Builder builder) {
         this.userName = builder.userName;
         this.email = builder.email;
+        this.memeLikedList = builder.memeLikedList;
     }
 
     public String getUserName() {
@@ -30,13 +34,16 @@ public class UserModel {
         this.email = email;
     }
 
+    public List<String> getMemeLikedList() { return memeLikedList; }
 
+    public void setMemeLikedList(List<String> memeLikedList) { this.memeLikedList = memeLikedList; }
 
     public static UserModel.Builder builder() { return new UserModel.Builder(); }
 
     public static final class Builder {
         private String userName;
         private String email;
+        private List<String> memeLikedList;
 
         public UserModel.Builder withUserName(String userNameToUse) {
             this.userName = userNameToUse;
@@ -45,6 +52,11 @@ public class UserModel {
 
         public UserModel.Builder withEmail(String emailToUse) {
             this.email = emailToUse;
+            return this;
+        }
+
+        public UserModel.Builder withMemeLikedList(List<String> memeLikedListToUse) {
+            this.memeLikedList = memeLikedListToUse;
             return this;
         }
 

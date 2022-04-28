@@ -1,13 +1,11 @@
 package com.memes.models.results;
 
-import com.memes.models.MemeModel;
-
 import java.util.List;
 
-public class GetUserMemeLikedListResult {
+public class UserMemeLikedListResult {
     private List<String> memeLikedList;
 
-    public GetUserMemeLikedListResult(GetUserMemeLikedListResult.Builder builder) {
+    public UserMemeLikedListResult(UserMemeLikedListResult.Builder builder) {
         this.memeLikedList = builder.memeLikedList;
     }
 
@@ -19,16 +17,16 @@ public class GetUserMemeLikedListResult {
         this.memeLikedList = memeLikedList;
     }
 
-    public static GetUserMemeLikedListResult.Builder builder() {return new GetUserMemeLikedListResult.Builder();}
+    public static UserMemeLikedListResult.Builder builder() {return new UserMemeLikedListResult.Builder();}
 
     public static final class Builder {
         private List<String> memeLikedList;
 
-        public GetUserMemeLikedListResult.Builder withUserMemeLikedList(List<String> memeLikedList) {
+        public UserMemeLikedListResult.Builder withUserMemeLikedList(List<String> memeLikedList) {
             this.memeLikedList = memeLikedList;
             return this;
         }
 
-        public GetUserMemeLikedListResult build() {return new GetUserMemeLikedListResult(this);}
+        public UserMemeLikedListResult build() {return new UserMemeLikedListResult(this);}
     }
 }
