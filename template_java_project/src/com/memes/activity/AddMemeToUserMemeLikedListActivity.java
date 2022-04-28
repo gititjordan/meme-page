@@ -20,6 +20,7 @@ public class AddMemeToUserMemeLikedListActivity implements RequestHandler<GetEma
 
     @Override
     public UserMemeLikedListResult handleRequest(GetEmailUserAndUrlMemeRequest input, Context context) {
+        // Retrieve user inputs
         String email = input.getEmail();
         String url = input.getUrl();
 
