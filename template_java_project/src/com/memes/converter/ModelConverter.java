@@ -18,6 +18,7 @@ public class ModelConverter {
         return UserModel.builder()
                 .withUserName(user.getUserName())
                 .withEmail(user.getEmail())
+                .withMemeLikedList(user.getMemeLikedList())
                 .build();
     }
 }

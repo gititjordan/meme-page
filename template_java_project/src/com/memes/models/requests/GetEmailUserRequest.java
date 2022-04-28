@@ -8,7 +8,6 @@ public class GetEmailUserRequest {
     }
 
     public GetEmailUserRequest(GetEmailUserRequest.Builder builder) {
-
         this.email = builder.email;
     }
 

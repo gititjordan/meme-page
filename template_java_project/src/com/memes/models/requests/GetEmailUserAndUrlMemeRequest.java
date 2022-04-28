@@ -4,6 +4,10 @@ public class GetEmailUserAndUrlMemeRequest {
     private String email;
     private String url;
 
+    public GetEmailUserAndUrlMemeRequest() {
+
+    }
+
     public GetEmailUserAndUrlMemeRequest(GetEmailUserAndUrlMemeRequest.Builder builder) {
         this.email = builder.email;
         this.url = builder.url;
