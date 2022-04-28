@@ -36,7 +36,14 @@ function random() {
     });
     direction = 0;
 }
-
+function saved() {
+    let urlExt = url.concat( "/memelikedlist/").concat(userEmail).concat("/").concat(document.getElementById("image1").src);
+      axios.post(urlExt, headers)
+      .then((res) => {
+        console.log(res);
+        window.location.reload();
+      })
+}
 function handleError() {
    if (direction < 0) {
        previous()

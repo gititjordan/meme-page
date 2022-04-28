@@ -10,6 +10,7 @@ import com.memes.models.requests.GetEmailUserAndUrlMemeRequest;
 import com.memes.models.results.UserMemeLikedListResult;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
 import java.util.List;
 
 public class AddMemeToUserMemeLikedListActivity implements RequestHandler<GetEmailUserAndUrlMemeRequest, UserMemeLikedListResult> {
@@ -28,7 +29,7 @@ public class AddMemeToUserMemeLikedListActivity implements RequestHandler<GetEma
 
         User user = userDao.getUser(email);
         List<String> memeLikedList = user.getMemeLikedList();
-
+        if (memeLikedList == null) memeLikedList = new ArrayList<>();
         if (memeLikedList.contains(url)) throw new DuplicateMemeFoundException(url + " is already in this user's liked list");
         if (url.isEmpty()) throw new InvalidInputException("Url is empty");
 
