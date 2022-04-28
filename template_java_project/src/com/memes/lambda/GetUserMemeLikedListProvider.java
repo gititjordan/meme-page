@@ -4,14 +4,15 @@ import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.memes.dependency.DaggerServiceComponent;
 import com.memes.dependency.ServiceComponent;
-import com.memes.models.requests.GetIndexMemeRequest;
-import com.memes.models.results.GetIndexMemeResult;
+import com.memes.models.requests.GetEmailUserRequest;
+import com.memes.models.results.UserMemeLikedListResult;
 
-public class GetIndexMemeProvider implements RequestHandler<GetIndexMemeRequest, GetIndexMemeResult> {
+public class GetUserMemeLikedListProvider implements RequestHandler<GetEmailUserRequest, UserMemeLikedListResult> {
     @Override
-    public GetIndexMemeResult handleRequest(final GetIndexMemeRequest input, Context context) {
+    public UserMemeLikedListResult handleRequest(GetEmailUserRequest input, Context context) {
         ServiceComponent dagger = getDaggerServiceComponent();
-        return dagger.provideGetIndexMemeActivity().handleRequest(input, context);
+        return dagger.provideGetUserMemeLikedListActivity().handleRequest(input, context);
+
     }
     private ServiceComponent getDaggerServiceComponent() {
         return DaggerServiceComponent.create();

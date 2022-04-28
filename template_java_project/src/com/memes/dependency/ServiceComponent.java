@@ -12,5 +12,6 @@ public interface ServiceComponent {
     GetRandomMemeActivity provideGetRandomMemeActivity();
     UserPoolMapperActivity provideUserPoolMapperActivity();
     GetEmailUserActivity provideGetEmailUserActivity();
-
+    GetUserMemeLikedListActivity provideGetUserMemeLikedListActivity();
+    AddMemeToUserMemeLikedListActivity provideAddMemeToUserMemeLikedListActivity();
 }

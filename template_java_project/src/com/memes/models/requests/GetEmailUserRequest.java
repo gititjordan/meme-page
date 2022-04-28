@@ -1,10 +1,7 @@
 package com.memes.models.requests;
 
-import java.util.Objects;
-
 public class GetEmailUserRequest {
     private String email;
-
 
     public GetEmailUserRequest() {
 
