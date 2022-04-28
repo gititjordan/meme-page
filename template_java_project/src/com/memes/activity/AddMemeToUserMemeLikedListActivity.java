@@ -32,7 +32,8 @@ public class AddMemeToUserMemeLikedListActivity implements RequestHandler<GetEma
         }
 
         user.setMemeLikedList(memeLikedList);
-
+        user = userDao.saveUser(user);
+        
         return UserMemeLikedListResult.builder()
                 .withUserMemeLikedList(user.getMemeLikedList())
                 .build();
