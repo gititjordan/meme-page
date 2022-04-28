@@ -14,36 +14,49 @@
     
     
       
-    <table style="background-color:rgb(0, 0, 0);">
+    <table class="table">
         <tr class="row">
-        <td width="400" height="400">
-                <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
-        </td>
-        <td class="td" width="400" height="400">
-                <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
-        </td>
-        <td width="400" height="400">
-                <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
-        </td>
-        <td width="400" height="400">
-                <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
-        </td>
-        </tr>
+            <td class="td" width="400" height="400">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            </td>
+            <td class="td" width="400" height="400">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            </td>
+            <td class="td" width="400" height="400">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            </td>
+            <td class="td" width="400" height="400">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            </td>
+            </tr>
         <tr class="row">
-            <td width="400" height="400">
+            <td class="td" width="400" height="400">
                     <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
             </td>
-            <td width="400" height="400">
+            <td class="td" width="400" height="400">
                     <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
             </td>
-            <td width="400" height="400">
+            <td class="td" width="400" height="400">
                     <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
             </td>
-            <td width="400" height="400">
+            <td class="td" width="400" height="400">
                     <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
             </td>
         </tr>
     </table>
+    <div class="center">
+        <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a href="#" class="active">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+        </div>
+      </div>
+      
     <style>
         .image {
             max-height: 100%;
@@ -57,11 +70,40 @@
            padding-bottom: 50px;
         }
         .td {
-            padding-left: 100px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         .table {
             background-color: black;
+            margin-left: auto;
+            margin-right: auto;
         }
+        .center {
+            text-align: center;
+        }
+
+        .pagination {
+            padding-top: 25px;
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+            margin: 0 4px;
+        }
+
+        .pagination a.active {
+            background-color: #4CAF50;
+            color: white;
+            border: 1px solid #4CAF50;
+        }
+
+        .pagination a:hover:not(.active) {background-color: #ddd;}
     </style>
 
 </body>
