@@ -12,11 +12,11 @@ import com.memes.models.results.UserMemeLikedListResult;
 import javax.inject.Inject;
 import java.util.List;
 
-public class AddMemeToUserMemeLikedListActivity implements RequestHandler<GetEmailUserAndUrlMemeRequest, UserMemeLikedListResult> {
+public class DeleteMemeFromUserMemeLikedListActivity implements RequestHandler<GetEmailUserAndUrlMemeRequest, UserMemeLikedListResult> {
     private UserDao userDao;
 
     @Inject
-    public AddMemeToUserMemeLikedListActivity(UserDao userDao) {
+    public DeleteMemeFromUserMemeLikedListActivity(UserDao userDao) {
         this.userDao = userDao;
     }
 
@@ -29,10 +29,10 @@ public class AddMemeToUserMemeLikedListActivity implements RequestHandler<GetEma
         User user = userDao.getUser(email);
         List<String> memeLikedList = user.getMemeLikedList();
 
-        if (memeLikedList.contains(url)) throw new DuplicateMemeFoundException(url + " is already in this user's liked list");
+        if (memeLikedList.isEmpty()) throw new RuntimeException("List is empty");
         if (url.isEmpty()) throw new InvalidInputException("Url is empty");
-
-        memeLikedList.add(url);
+        if (!memeLikedList.contains(url)) throw new RuntimeException("List does not contain this meme");
+        memeLikedList.remove(url);
 
         user.setMemeLikedList(memeLikedList);
         user = userDao.saveUser(user);
