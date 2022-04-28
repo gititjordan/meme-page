@@ -28,7 +28,8 @@ function previous() {
 }
 
 function random() {
-    axios.get(url, headers).then((res) => {
+    let urlExt = url.concat("/memetable/")
+    axios.get(urlExt, headers).then((res) => {
         document.getElementById("image1").src=res.data.memeModel.url
         currIndex = res.data.memeModel.numInDb
         console.log(res)
