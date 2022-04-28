@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
-<!-- <body onload="load()"> -->
-    <body onload="loadMemes()">
-    <script src="js/saved.js"></script>
     <script src="js/master.js"></script>
+<body onload="loadMemes()">
+
+    <script src="js/saved.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Navigation -->
     <nav class="w3-bar w3-black">
@@ -20,50 +20,44 @@
     
     <table class="table">
         <tr class="row">
-            <td class="td" width="300" height="300">
-                    <img src="https://knowyourmeme.com/photos/2186254"  id="1" class="image"/>
+            <td class="td" width="400" height="400">
+                <img src=""  id="pic0" class="centerimage"/>
             </td>
-            <td class="td" width="300" height="300" onclick="toHomeSaved()">
-                    <img src="https://knowyourmeme.com/photos/2186254"  id="2" class="image"/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                <img src=""  id="pic1" class="centerimage"/>
             </td>
-            <td class="td" width="300" height="300" onclick="toHomeSaved()">
-                    <img src="https://knowyourmeme.com/photos/2186254"  id="3" class="image"/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                <img src=""  id="pic2" class="centerimage"/>
             </td>
-            <td class="td" width="300" height="300" onclick="toHomeSaved()">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="4" class="image"/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                <img src=""  id="pic3" class="centerimage"/>
             </td>
             </tr>
         <tr class="row">
-            <td class="td" width="300" height="300" onclick="toHomeSaved()">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="5" class="image"/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                <img src=""  id="pic4" class="centerimage"/>
             </td>
-            <td class="td" width="300" height="300" onclick="toHomeSaved()">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="6" class="image"/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                <img src=""  id="pic5" class="centerimage"/>
             </td>
-            <td class="td" width="300" height="300" onclick="toHomeSaved()">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="7" class="image"/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                <img src=""  id="pic6" class="centerimage"/>
             </td>
-            <td class="td" width="300" height="300" onclick="toHomeSaved()">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="8" class="image"/>
-                   
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                <img src=""  id="pic7" class="centerimage"/>
             </td>
         </tr>
     </table>
     <div class="center">
         <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
+        <a id="left" onclick="previous8()">&laquo;</a>
+        
+        <a id = "right" onclick="next8()">&raquo;</a>
         </div>
       </div>
       
     <style>
-        .image {
+        .centerimage {
             max-height: 100%;
             max-width: 100%;
             margin-top: auto;
@@ -72,14 +66,13 @@
             margin-right: auto;
         }
         .row {
-           padding-bottom: 50px;
+           padding-bottom: 5px;
         }
         .td {
             padding-left: 10px;
             padding-right: 10px;
         }
         .table {
-            background-color: black;
             margin-left: auto;
             margin-right: auto;
         }
