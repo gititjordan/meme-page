@@ -4,11 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
 
-<body>
+<!-- <body onload="load()"> -->
+    <body onload="loadMemes()">
+    <script src="js/saved.js"></script>
+    <script src="js/master.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Navigation -->
     <nav class="w3-bar w3-black">
-        <a href="#home" class="w3-button w3-bar-item">Saved Memes</a>
+        <a onclick="toHome()" class="w3-button w3-bar-item">Home</a>
+        <a onclick="toSaved()" class="w3-button w3-bar-item">Saved Memes</a>
         <a href="#contact" class="w3-button w3-bar-item">My Account</a>
     </nav>
     
@@ -16,31 +20,32 @@
       
     <table class="table">
         <tr class="row">
-            <td class="td" width="400" height="400">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="1" class="image"/>
             </td>
-            <td class="td" width="400" height="400">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="2" class="image"/>
             </td>
-            <td class="td" width="400" height="400">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="3" class="image"/>
             </td>
-            <td class="td" width="400" height="400">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="4" class="image"/>
             </td>
             </tr>
         <tr class="row">
-            <td class="td" width="400" height="400">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="5" class="image"/>
             </td>
-            <td class="td" width="400" height="400">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="6" class="image"/>
             </td>
-            <td class="td" width="400" height="400">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="7" class="image"/>
             </td>
-            <td class="td" width="400" height="400">
-                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg" class="image" onclick=""/>
+            <td class="td" width="400" height="400" onclick="toHomeSaved()">
+                    <img src="https://pbs.twimg.com/media/FBZ82tSXoAAr3YQ.jpg"  id="8" class="image"/>
+                   
             </td>
         </tr>
     </table>

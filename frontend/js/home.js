@@ -1,13 +1,7 @@
 let currIndex = 0;
-let url = "https://g4yv4i4tg4.execute-api.us-west-2.amazonaws.com/prod/memetable";
-let headers = {
-    authorization: {
-      'x-api-key': 'FyWu0VPqWuanyt47uz7fD3SmmCBZLRHC6Xg08JLg'
-    }
-  }
 let direction = 0; 
 function next() {
-    let urlExt = url.concat("/").concat((currIndex+1).toString())
+    let urlExt = url.concat("/memetable/").concat((currIndex+1).toString())
     let success = false;
     if (currIndex >= 98) {
         currIndex = 0
