@@ -11,6 +11,7 @@ public class AddNotificationRequest {
 
     public AddNotificationRequest(AddNotificationRequest.Builder builder) {
         this.email = builder.email;
+        this.fromEmail = builder.fromEmail;
         this.url = builder.url;
     }
 

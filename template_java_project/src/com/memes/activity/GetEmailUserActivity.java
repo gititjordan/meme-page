@@ -26,6 +26,7 @@ public class GetEmailUserActivity implements RequestHandler<GetEmailUserRequest,
     public GetEmailUserResult handleRequest(final GetEmailUserRequest input, Context context) {
         User user = userDao.getUser(input.getEmail());
         UserModel userModel = new ModelConverter().toUserModel(user);
+
         return GetEmailUserResult.builder()
                 .withUser(userModel)
                 .build();

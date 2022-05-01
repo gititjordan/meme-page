@@ -17,4 +17,5 @@ public interface ServiceComponent {
     DeleteMemeFromUserMemeLikedListActivity provideDeleteMemeFromUserMemeLikedListActivity();
     AddMemeToNotificationsActivity provideAddMemeToNotificationsActivity();
     GetNotificationsActivity provideGetNotificationsActivity();
+    AddHoroscopeActivity provideAddHoroscopeActivity();
 }

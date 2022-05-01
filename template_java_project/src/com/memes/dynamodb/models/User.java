@@ -11,6 +11,7 @@ import java.util.List;
 public class User {
     private String userName;
     private String email;
+    private String horoscope;
     private List<String> memeLikedList;
     private List<String> notifications;
 
@@ -48,5 +49,14 @@ public class User {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    @DynamoDBAttribute(attributeName = "horoscope")
+    public String getHoroscope() {
+        return horoscope;
+    }
+
+    public void setHoroscope(String horoscope) {
+        this.horoscope = horoscope;
     }
 }
