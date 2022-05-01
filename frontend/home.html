@@ -12,7 +12,7 @@
     <nav class="w3-bar w3-black">
         <a onclick="toHome()" class="w3-button w3-bar-item">Home</a>
         <a onclick="toSaved()" class="w3-button w3-bar-item">Saved Memes</a>
-        <a href="#contact" class="w3-button w3-bar-item">My Account</a>
+        <a onclick="toAccountDetails()" class="w3-button w3-bar-item">My Account</a>
     </nav>
     
     
@@ -24,6 +24,7 @@
         <button onclick="previous()" class="left">Previous</button>
         <button onclick="next()" class="right">Next</button>
         <button onclick="save()"class="centerbutton">Save</button>
+        <button onclick="share()"class="centerbutton2">Share</button>
         <button onclick="random()" class="topbutton">Random</button>
     </section>
     <style>
@@ -73,7 +74,20 @@
             display: block;
             margin-top: 80px;
             position: absolute;
-            right: 50%;
+            right: 45%;
+            width: 5%;
+            height: 3.5%;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: .2s;
+        }
+        .centerbutton2 {
+            display: block;
+            margin-top: 80px;
+            position: absolute;
+            right: 55%;
             width: 5%;
             height: 3.5%;
             text-align: center;

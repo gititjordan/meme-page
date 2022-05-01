@@ -15,4 +15,6 @@ public interface ServiceComponent {
     GetUserMemeLikedListActivity provideGetUserMemeLikedListActivity();
     AddMemeToUserMemeLikedListActivity provideAddMemeToUserMemeLikedListActivity();
     DeleteMemeFromUserMemeLikedListActivity provideDeleteMemeFromUserMemeLikedListActivity();
+    AddMemeToNotificationsActivity provideAddMemeToNotificationsActivity();
+    GetNotificationsActivity provideGetNotificationsActivity();
 }

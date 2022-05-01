@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
 <head>
     <title>Account Details</title>
 </head>
-<body>
+<body onload="loadMemes()">
+  <script src="js/account-detail.js"></script>
+    <script src="js/master.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <nav class="w3-bar w3-black">
+    <a onclick="toHome()" class="w3-button w3-bar-item">Home</a>
+    <a onclick="toSaved()" class="w3-button w3-bar-item">Saved Memes</a>
+    <a onclick="toAccountDetails()" class="w3-button w3-bar-item">My Account</a>
+</nav>
 <div class="container">
     <div class="container1">
         <div class="container1-1">
@@ -36,55 +46,55 @@
 
             <div class="meme-element">
                 <div class="meme">
-                    <img class="pic" src="memes/doge-meme.jpeg">
+                    <img class="pic" id="pic1" src="">
                 </div>
                 <div class="information">
-                    <p>From Casey</p>
+                    <p id="from0">From Casey</p>
                 </div>
             </div>
 
             <div class="meme-element">
                 <div class="meme">
-                    <img class="pic" src="memes/frog-meme.jpeg">
+                    <img class="pic" id="pic3" src="">
                 </div>
                 <div class="information">
-                    <p>From Giang</p>
+                    <p id="from2">From Giang</p>
                 </div>
             </div>
 
             <div class="meme-element">
                 <div class="meme">
-                    <img class="pic" src="memes/focus-meme.jpeg">
+                    <img class="pic" id="pic5" src="">
                 </div>
                 <div class="information">
-                    <p>From Andrew</p>
+                    <p id="from4">From Andrew</p>
                 </div>
             </div>
 
             <div class="meme-element">
                 <div class="meme">
-                    <img class="pic" src="memes/stonks-memes (1).webp">
+                    <img class="pic" id="pic7" src="">
                 </div>
                 <div class="information">
-                    <p>From Mickey</p>
+                    <p id="from6">From Mickey</p>
                 </div>
             </div>
 
             <div class="meme-element">
                 <div class="meme">
-                    <img class="pic" src="memes/smart-mind.jpeg">
+                    <img class="pic" id="pic9" src="">
                 </div>
                 <div class="information">
-                    <p>From Jordan</p>
+                    <p id="from8">From Jordan</p>
                 </div>
             </div>
 
             <div class="meme-element">
                 <div class="meme">
-                    <img class="pic" src="memes/google-meme.png">
+                    <img class="pic" id="pic11" src="">
                 </div>
                 <div class="information">
-                    <p>From Tom</p>
+                    <p id="from10">From Tom</p>
                 </div>
             </div>
 

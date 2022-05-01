@@ -12,6 +12,7 @@ public class User {
     private String userName;
     private String email;
     private List<String> memeLikedList;
+    private List<String> notifications;
 
     @DynamoDBHashKey(attributeName = "email")
     public String getEmail() {
@@ -34,6 +35,15 @@ public class User {
 
     public void setMemeLikedList(List<String> memeLikedList) {
         this.memeLikedList = memeLikedList;
+    }
+
+    @DynamoDBAttribute(attributeName = "notifications")
+    public List<String> getNotifications() {
+        return notifications;
+    }
+
+    public void setNotifications(List<String> notifications) {
+        this.notifications = notifications;
     }
 
     public void setUserName(String userName) {
