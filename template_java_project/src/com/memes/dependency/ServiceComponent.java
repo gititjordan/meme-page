@@ -18,4 +18,5 @@ public interface ServiceComponent {
     AddMemeToNotificationsActivity provideAddMemeToNotificationsActivity();
     GetNotificationsActivity provideGetNotificationsActivity();
     AddHoroscopeActivity provideAddHoroscopeActivity();
+    GetHoroscopeMemeActivity provideGetHoroscopeMemeActivity();
 }

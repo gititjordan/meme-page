@@ -19,4 +19,11 @@ function load(){
         );
     });
 }
+function changeHoroscope(horoscope) {
+    let urlExt = url.concat( "/horoscope/").concat(userEmail);
+    let memeObj = {
+        "horoscope": horoscope
+    }
+    axios.post(urlExt, memeObj, headers).then((res) => {console.log(res.data)})
+}
 

@@ -2,6 +2,7 @@ let x;
 let currIndex = 0;
 let direction = 0; 
 function next() {
+    document.getElementById("horo").innerText=""
     let urlExt = url.concat("/memetable/").concat((currIndex+1).toString())
     let success = false;
     if (currIndex >= 98) {
@@ -17,6 +18,7 @@ function next() {
     direction = 1;
 }
 function previous() {
+    document.getElementById("horo").innerText=""
     let urlExt = url.concat("/").concat((currIndex-1).toString())
     if (currIndex <= 0) {
         currIndex = 97
@@ -29,6 +31,7 @@ function previous() {
 }
 
 function random() {
+    document.getElementById("horo").innerText=""
     let urlExt = url.concat("/memetable/")
     axios.get(urlExt, headers).then((res) => {
         document.getElementById("image1").src=res.data.memeModel.url
@@ -55,6 +58,18 @@ function share() {
         }
         axios.post(urlExt, memeObj, headers).then((res) => {console.log(res.data)})
     }
+}
+function horoscope() {
+    document.getElementById("horo").innerText="DAILY HOROSCOPE"
+    let urlExt = url.concat("/horoscope/").concat(userEmail)
+    axios.get(urlExt, headers).then((res) => {
+        if (res.data.url != "no horo") {
+            document.getElementById("image1").src=res.data.url
+        }else {
+            random()
+        }
+    });
+    currIndex = 1;
 }
 function handleError() {
    if (direction < 0) {
