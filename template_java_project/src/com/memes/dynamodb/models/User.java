@@ -11,6 +11,7 @@ import java.util.List;
 public class User {
     private String userName;
     private String email;
+    private Integer password;
     private String horoscope;
     private List<String> memeLikedList;
     private List<String> notifications;
@@ -22,6 +23,15 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @DynamoDBAttribute(attributeName = "password")
+    public Integer getPassword() {
+        return password;
+    }
+
+    public void setPassword(Integer password) {
+        this.password = password;
     }
 
     @DynamoDBAttribute(attributeName = "userName")

@@ -1,4 +1,3 @@
-let x;
 let currIndex = 0;
 let direction = 0; 
 function next() {
@@ -60,17 +59,29 @@ function share() {
     }
 }
 function horoscope() {
+    userEmail = sessionStorage.getItem("userEmail")
     document.getElementById("horo").innerText="DAILY HOROSCOPE"
     let urlExt = url.concat("/horoscope/").concat(userEmail)
+    showSpinner()
     axios.get(urlExt, headers).then((res) => {
         if (res.data.url != "no horo") {
             document.getElementById("image1").src=res.data.url
         }else {
             random()
         }
+        hideSpinner()
     });
+    
     currIndex = 1;
 }
+function showSpinner() {
+    document.getElementById('spinner').style.display="block"
+}
+function hideSpinner() {
+    document.getElementById('spinner').style.display="none"
+    
+}
+
 function handleError() {
    if (direction < 0) {
        previous()

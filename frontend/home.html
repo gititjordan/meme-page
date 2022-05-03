@@ -7,7 +7,7 @@
 <body onload="horoscope()">
     <script src="js/home.js"></script>
     <script src="js/master.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/axios.min.js"></script>
     <!-- Navigation -->
     <nav class="w3-bar w3-black">
         <a onclick="toHome()" class="w3-button w3-bar-item">Home</a>
@@ -20,8 +20,12 @@
     <section width="1000px"class="center">
         <div id="horo" style="font-size: larger;"></div>
         <img class="centerimage" id="image1" onerror="handleError()">
+        <div id="spinner" style="display:none">
+            <img src="images/spinner.webp">
+        </div>
     </section>
     <section>
+    
         <button onclick="previous()" class="left">Previous</button>
         <button onclick="next()" class="right">Next</button>
         <button onclick="save()"class="centerbutton">Save</button>
